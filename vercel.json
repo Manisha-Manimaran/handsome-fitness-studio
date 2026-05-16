@@ -2,6 +2,7 @@
   "rootDirectory": "handsome-fitness-studio",
   "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public",
+  "framework": "hugo",
   "cleanUrls": true,
   "env": {
     "HUGO_VERSION": "0.161.1"
