@@ -1,5 +1,4 @@
 {
-  "rootDirectory": "handsome-fitness-studio",
   "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public",
   "framework": "hugo",
