@@ -1,0 +1,9 @@
+{
+  "buildCommand": "hugo -s handsome-fitness-studio --gc --minify",
+  "outputDirectory": "handsome-fitness-studio/public",
+  "framework": "hugo",
+  "cleanUrls": true,
+  "env": {
+    "HUGO_VERSION": "0.161.1"
+  }
+}
