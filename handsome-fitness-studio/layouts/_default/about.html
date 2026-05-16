@@ -1,0 +1,111 @@
+{{ define "main" }}
+<section class="about-hero">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <span class="section-label">About Us</span>
+        <h1>About <span class="accent-red">Handsome Fitness Studio A/C</span></h1>
+        <p>Handsome Fitness Studio A/C is a modern air-conditioned fitness studio designed for people who want a clean, comfortable and motivating workout environment. With modern equipment and proper training support, we help members build strength, lose fat and stay consistent.</p>
+        <div class="about-buttons">
+          <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+          <a href="/plans/" class="btn btn-secondary">View Membership Plans</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80" alt="Handsome Fitness Studio A/C Interior" loading="lazy">
+        <div class="about-image-badges">
+          <span class="about-badge">A/C Fitness Studio</span>
+          <span class="about-badge">Modern Equipment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1000+</div>
+        <div class="stat-label">Happy Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Expert Trainers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Transformations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">Why Members Choose Us</h2>
+      <p class="section-subtitle">We provide the perfect environment for your fitness journey with modern facilities and expert support.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>
+        </div>
+        <h3>A/C Environment</h3>
+        <p>Fully air-conditioned studio for comfortable workouts throughout the year.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Modern Equipment</h3>
+        <p>Latest gym equipment for safe and effective training across all fitness levels.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Expert Trainers</h3>
+        <p>Professional guidance for beginners and advanced members to reach goals safely.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+        </div>
+        <h3>Goal-Based Training</h3>
+        <p>Support for fat loss, strength building, and specific fitness objectives.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Clean & Hygienic</h3>
+        <p>Well-maintained and clean workout space with regular sanitization.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Supportive Atmosphere</h3>
+        <p>Friendly and motivating environment to help you stay consistent and focused.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Ready to start your fitness journey?</h2>
+      <p>Message us on WhatsApp to know plans, timings and offers.</p>
+      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,68 @@
+{{ define "main" }}
+<section class="page-header">
+  <div class="container">
+    <span class="section-label">Programs</span>
+    <h1>Our Fitness Programs</h1>
+    <p>Explore our range of fitness programs designed for all levels.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="programs-grid">
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="Weight Training" loading="lazy">
+        <div class="program-body">
+          <h3>Weight Training</h3>
+          <p>Build muscle and increase strength with our comprehensive weight training program. Access to free weights, machines, and guided routines for all experience levels.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Fat Loss" loading="lazy">
+        <div class="program-body">
+          <h3>Fat Loss</h3>
+          <p>Effective fat loss programs combining high-intensity cardio, resistance training, and personalized diet guidance to help you achieve sustainable results.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="Strength Training" loading="lazy">
+        <div class="program-body">
+          <h3>Strength Training</h3>
+          <p>Focus on compound movements and progressive overload techniques to build functional strength and improve overall athletic performance.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Personal Training" loading="lazy">
+        <div class="program-body">
+          <h3>Personal Training</h3>
+          <p>One-on-one coaching with certified trainers. Get a customized workout plan, form correction, and dedicated support to reach your goals faster.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80" alt="CrossFit / Functional Training" loading="lazy">
+        <div class="program-body">
+          <h3>CrossFit / Functional Training</h3>
+          <p>High-intensity functional training combining weightlifting, cardio, and bodyweight exercises to improve endurance, agility, and overall fitness.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Cardio & Conditioning" loading="lazy">
+        <div class="program-body">
+          <h3>Cardio & Conditioning</h3>
+          <p>Improve cardiovascular health and stamina with structured conditioning sessions using treadmills, cycles, rowing machines, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Not sure which program suits you?</h2>
+      <p>Chat with us on WhatsApp and our trainers will help you choose the right program.</p>
+      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'd like to know more about your programs." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">Chat with Us</a>
+    </div>
+  </div>
+</section>
+{{ end }}

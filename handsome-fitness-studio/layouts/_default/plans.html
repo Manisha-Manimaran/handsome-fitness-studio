@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="page-header">
+  <div class="container">
+    <span class="section-label">Pricing</span>
+    <h1>Membership Plans</h1>
+    <p>Choose the plan that fits your fitness journey. Transparent pricing with no hidden charges.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price">₹999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>Full gym access</li>
+          <li>Basic workout guidance</li>
+          <li>General fitness support</li>
+          <li>Locker room access</li>
+          <li>Open gym hours</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Basic plan (₹999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">₹1,999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>Full gym access</li>
+          <li>Fat loss & strength guidance</li>
+          <li>Diet guidance support</li>
+          <li>Progress tracking</li>
+          <li>Priority equipment access</li>
+          <li>Monthly fitness assessment</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Premium plan (₹1,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Personal Coaching</div>
+        <div class="plan-price">₹4,999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>One-to-one personal coaching</li>
+          <li>Custom workout plan</li>
+          <li>Personal progress monitoring</li>
+          <li>Priority WhatsApp support</li>
+          <li>Nutrition & diet guidance</li>
+          <li>Weekly progress reviews</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Personal Coaching plan (₹4,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Have questions about our plans?</h2>
+      <p>Message us on WhatsApp and we'll help you find the right plan.</p>
+      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,155 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1400&q=80" alt="Handsome Fitness Studio" loading="lazy">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">Handsome Fitness Studio A/C</div>
+      <h1 class="hero-title">Build Strength.<br>Stay Fit.<span class="accent-red"> Feel Confident.</span></h1>
+      <p class="hero-tagline">Premium air-conditioned fitness studio with modern equipment and expert trainers. Your journey to a stronger, healthier you starts here.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+        <a href="/plans/" class="btn btn-secondary">View Membership Plans</a>
+      </div>
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <h4>A/C Fitness Studio</h4>
+          <p>Comfortable workouts</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Strength Training</h4>
+          <p>Build real muscle</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Fat Loss Programs</h4>
+          <p>Get lean & fit</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Personal Coaching</h4>
+          <p>One-on-one guidance</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Modern Equipment</h4>
+          <p>Latest gym gear</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Programs</span>
+      <h2 class="section-title">Our Fitness Programs</h2>
+      <p class="section-subtitle">Tailored programs designed to help you achieve your fitness goals, regardless of your experience level.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80" alt="Weight Training" loading="lazy">
+        <div class="program-body">
+          <h3>Weight Training</h3>
+          <p>Build muscle and increase strength with guided weight training programs using modern equipment.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Fat Loss" loading="lazy">
+        <div class="program-body">
+          <h3>Fat Loss</h3>
+          <p>Effective fat loss programs combining cardio, resistance training, and diet guidance.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80" alt="Strength Training" loading="lazy">
+        <div class="program-body">
+          <h3>Strength Training</h3>
+          <p>Focus on compound movements and progressive overload to build functional strength.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80" alt="Personal Training" loading="lazy">
+        <div class="program-body">
+          <h3>Personal Training</h3>
+          <p>One-on-one coaching with customized workout plans tailored to your specific goals.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80" alt="CrossFit" loading="lazy">
+        <div class="program-body">
+          <h3>CrossFit / Functional</h3>
+          <p>High-intensity functional training that improves endurance, agility, and overall fitness.</p>
+        </div>
+      </div>
+      <div class="program-card">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Cardio" loading="lazy">
+        <div class="program-body">
+          <h3>Cardio & Conditioning</h3>
+          <p>Improve cardiovascular health and endurance with structured conditioning sessions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Plans</span>
+      <h2 class="section-title">Membership Plans</h2>
+      <p class="section-subtitle">Choose the plan that fits your fitness journey. All plans include access to our air-conditioned facility.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price">₹999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>Full gym access</li>
+          <li>Basic workout guidance</li>
+          <li>General fitness support</li>
+          <li>Locker room access</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Basic plan (₹999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">₹1,999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>Full gym access</li>
+          <li>Fat loss & strength guidance</li>
+          <li>Diet guidance support</li>
+          <li>Progress tracking</li>
+          <li>Priority equipment access</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Premium plan (₹1,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Personal Coaching</div>
+        <div class="plan-price">₹4,999 <span>/month</span></div>
+        <div class="plan-duration">Monthly membership</div>
+        <ul class="plan-features">
+          <li>One-to-one personal coaching</li>
+          <li>Custom workout plan</li>
+          <li>Personal progress monitoring</li>
+          <li>Priority WhatsApp support</li>
+          <li>Nutrition guidance</li>
+        </ul>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Personal Coaching plan (₹4,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-card">
+      <h2>Ready to start your fitness journey?</h2>
+      <p>Message us on WhatsApp to know plans, timings and offers.</p>
+      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
+    </div>
+  </div>
+</section>
+{{ end }}

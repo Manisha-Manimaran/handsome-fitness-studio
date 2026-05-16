@@ -1,0 +1,44 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>{{ .Site.Params.brand }}</h3>
+      <p>Modern air-conditioned fitness studio dedicated to helping you build strength, lose fat, and stay consistent.</p>
+      <div class="footer-social">
+        <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l3-3a8.5 8.5 0 1 1 12-5.5z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/programs/">Programs</a></li>
+        <li><a href="/trainers/">Trainers</a></li>
+        <li><a href="/plans/">Plans</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
+        <li><a href="/testimonials/">Testimonials</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p>{{ .Site.Params.address }}</p>
+      <p>{{ .Site.Params.phoneNumber }}</p>
+      <p>{{ .Site.Params.email }}</p>
+      <p class="footer-hours">{{ .Site.Params.openingHours }}</p>
+      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp footer-wa">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.brand }}. All rights reserved.</p>
+    <a href="/privacy/" class="footer-privacy">Privacy Policy</a>
+  </div>
+</footer>

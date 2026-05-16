@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="privacy-section">
+  <div class="container">
+    <span class="section-label">Privacy Policy</span>
+    <h1>Privacy Policy</h1>
+    <p style="color: var(--text-muted); margin-bottom: 24px;">Last updated: January 2026</p>
+
+    <h2>Information We Collect</h2>
+    <p>When you use our website or services, we may collect the following information:</p>
+    <ul>
+      <li>Your name and contact information (phone number, email address)</li>
+      <li>Information you provide through our contact form or WhatsApp enquiries</li>
+      <li>Fitness goals and preferences you share with us</li>
+      <li>Basic usage data about how you interact with our website</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Respond to your enquiries and provide information about our services</li>
+      <li>Communicate with you via WhatsApp, phone, or email regarding your membership</li>
+      <li>Improve our services and website experience</li>
+      <li>Send relevant information about our programs and offers (only with your consent)</li>
+    </ul>
+
+    <h2>Contact Form & WhatsApp Enquiry</h2>
+    <p>When you submit an enquiry through our contact form or WhatsApp, the information you provide is used solely to respond to your enquiry. We do not share your personal information with third parties for marketing purposes.</p>
+
+    <h2>Data Protection</h2>
+    <p>We take reasonable precautions to protect your personal information. Your data is stored securely and accessed only by authorized staff members who need it to provide our services.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>Our website uses WhatsApp for communication. Your interactions with WhatsApp are subject to WhatsApp's own privacy policy. We do not control how WhatsApp handles your data.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal data we hold about you</li>
+      <li>Request correction or deletion of your personal data</li>
+      <li>Withdraw consent for us to use your data at any time</li>
+      <li>Request that we stop contacting you</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this privacy policy or how we handle your data, please contact us:</p>
+    <ul>
+      <li>Phone: {{ .Site.Params.phoneNumber }}</li>
+      <li>Email: {{ .Site.Params.email }}</li>
+      <li>WhatsApp: <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}" style="color: var(--whatsapp);">Chat with us</a></li>
+    </ul>
+  </div>
+</section>
+{{ end }}
