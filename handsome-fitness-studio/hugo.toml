@@ -5,6 +5,13 @@ theme = ''
 disableKinds = ['RSS', 'sitemap', 'taxonomy', 'term']
 defaultContentLanguage = 'en'
 
+[outputs]
+  home = ['HTML']
+  page = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ['HTML']
+
 [params]
   brand = 'Handsome Fitness Studio A/C'
   whatsappNumber = '919876543210'
