@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://handsome-fitness-studio-sirkazhi.vercel.app/'
 locale = 'en-us'
 title = 'Handsome Fitness Studio A/C'
 theme = ''
