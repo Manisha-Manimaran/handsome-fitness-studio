@@ -124,22 +124,20 @@ p { color: var(--text-secondary); font-size: 0.95rem; }
 .logo {
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #fff;
   white-space: nowrap;
   letter-spacing: -0.5px;
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding: 4px 12px;
+  background: var(--accent-red-dim);
+  border: 1px solid rgba(230,57,70,0.2);
+  border-radius: 6px;
+  transition: all 0.25s;
 }
-.logo::after {
-  content: '';
-  width: 3px;
-  height: 24px;
-  background: var(--accent-red);
-  border-radius: 2px;
+.logo:hover {
+  color: #fff;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 20px rgba(230,57,70,0.25);
 }
-.logo:hover { color: var(--accent-red); }
 .nav-menu { display: flex; align-items: center; gap: 4px; }
 .nav-link {
   font-size: 0.8rem;
