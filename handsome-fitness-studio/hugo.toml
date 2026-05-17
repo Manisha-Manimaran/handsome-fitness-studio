@@ -1,16 +1,22 @@
 baseURL = 'https://handsome-fitness-studio-sirkazhi.vercel.app/'
 locale = 'en-us'
-title = 'Handsome Fitness Studio A/C'
+title = 'Handsome Fitness Studio A/C - Gym in Sirkazhi'
 theme = ''
-disableKinds = ['RSS', 'sitemap', 'taxonomy', 'term']
+disableKinds = ['RSS', 'taxonomy', 'term']
 defaultContentLanguage = 'en'
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.8
+  filename = 'sitemap.xml'
 
 [params]
   brand = 'Handsome Fitness Studio A/C'
+  description = 'Handsome Fitness Studio A/C is a premium air-conditioned gym in Sirkazhi with modern equipment, strength training, fat loss programs and WhatsApp enquiry.'
   whatsappNumber = '919876543210'
   whatsappMessage = "Hi Handsome Fitness Studio, I'd like to enquire about your membership plans."
   phoneNumber = '+91-9876543210'
-  address = '123, Fitness Avenue, Near City Center, Your City - 110001'
+  address = 'Sirkazhi, Tamil Nadu'
   email = 'info@handsomefitnessstudio.com'
   openingHours = 'Mon - Sat: 6:00 AM - 10:00 PM | Sun: 7:00 AM - 2:00 PM'
   instagram = 'https://instagram.com/handsomefitnessstudio'
