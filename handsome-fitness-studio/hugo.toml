@@ -11,6 +11,7 @@ defaultContentLanguage = 'en'
   filename = 'sitemap.xml'
 
 [params]
+  goatcounterCode = 'handsomefitness'
   brand = 'Handsome Fitness Studio A/C'
   description = 'Handsome Fitness Studio A/C is a premium air-conditioned gym in Sirkazhi with modern equipment, strength training, fat loss programs and WhatsApp enquiry.'
   whatsappNumber = '919876543210'

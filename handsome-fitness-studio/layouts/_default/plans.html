@@ -10,7 +10,7 @@
 <section class="section">
   <div class="container">
     <div class="plans-grid">
-      <div class="plan-card">
+      <div class="plan-card reveal">
         <div class="plan-name">Basic</div>
         <div class="plan-price">₹999 <span>/month</span></div>
         <div class="plan-duration">Monthly membership</div>
@@ -23,7 +23,7 @@
         </ul>
         <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Basic plan (₹999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
       </div>
-      <div class="plan-card featured">
+      <div class="plan-card featured reveal">
         <div class="plan-name">Premium</div>
         <div class="plan-price">₹1,999 <span>/month</span></div>
         <div class="plan-duration">Monthly membership</div>
@@ -37,7 +37,7 @@
         </ul>
         <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Premium plan (₹1,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
       </div>
-      <div class="plan-card">
+      <div class="plan-card reveal">
         <div class="plan-name">Personal Coaching</div>
         <div class="plan-price">₹4,999 <span>/month</span></div>
         <div class="plan-duration">Monthly membership</div>
@@ -57,7 +57,7 @@
 
 <section class="section" style="background: var(--bg-secondary);">
   <div class="container">
-    <div class="cta-card">
+    <div class="cta-card reveal">
       <h2>Have questions about our plans?</h2>
       <p>Message us on WhatsApp and we'll help you find the right plan.</p>
       <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>

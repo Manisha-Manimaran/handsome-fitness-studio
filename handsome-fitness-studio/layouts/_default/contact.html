@@ -10,7 +10,7 @@
 <section class="section">
   <div class="container">
     <div class="contact-grid">
-      <div class="contact-info">
+      <div class="contact-info reveal">
         <h2>Contact Information</h2>
         <p style="margin-bottom: 24px;">Have questions? We're here to help. Reach out to us through any of the following channels.</p>
 
@@ -67,9 +67,9 @@
         </div>
       </div>
 
-      <div class="contact-form">
+      <div class="contact-form reveal">
         <h3 style="margin-bottom: 20px;">Send an Enquiry</h3>
-        <form>
+        <form id="contactForm" data-whatsapp="{{ .Site.Params.whatsappNumber }}" data-phone="{{ .Site.Params.phoneNumber }}">
           <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -93,19 +93,12 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell us about your fitness goals or ask any questions..."></textarea>
           </div>
-          <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in joining. My name is [name]. Please share details." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%; justify-content: center;">Send Enquiry on WhatsApp</a>
+          <div class="contact-form-actions">
+            <button type="button" class="btn btn-whatsapp" onclick="sendEnquiry()">Send Enquiry on WhatsApp</button>
+            <a href="tel:{{ .Site.Params.phoneNumber }}" class="btn btn-call">Call Now</a>
+          </div>
         </form>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="background: var(--bg-secondary);">
-  <div class="container">
-    <div class="cta-card">
-      <h2>Prefer to chat directly?</h2>
-      <p>Click below to start a WhatsApp conversation with our team right now.</p>
-      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">Chat with Us on WhatsApp</a>
     </div>
   </div>
 </section>
