@@ -3,7 +3,7 @@
   <div class="container">
     <span class="section-label">Pricing</span>
     <h1>Membership Plans</h1>
-    <p>Choose the plan that fits your fitness journey. Transparent pricing with no hidden charges.</p>
+    <p>Pick a plan that works for you. Simple pricing, no hidden charges.</p>
   </div>
 </section>
 
@@ -21,7 +21,7 @@
           <li>Locker room access</li>
           <li>Open gym hours</li>
         </ul>
-        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Basic plan (₹999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
       </div>
       <div class="plan-card featured reveal">
         <div class="plan-name">Premium</div>
@@ -35,7 +35,7 @@
           <li>Priority equipment access</li>
           <li>Monthly fitness assessment</li>
         </ul>
-        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Premium plan (₹1,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
       </div>
       <div class="plan-card reveal">
         <div class="plan-name">Personal Coaching</div>
@@ -49,18 +49,8 @@
           <li>Nutrition & diet guidance</li>
           <li>Weekly progress reviews</li>
         </ul>
-        <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ "Hi, I'm interested in the Personal Coaching plan (₹4,999/month)." | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="background: var(--bg-secondary);">
-  <div class="container">
-    <div class="cta-card reveal">
-      <h2>Have questions about our plans?</h2>
-      <p>Message us on WhatsApp and we'll help you find the right plan.</p>
-      <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Enquiry</a>
     </div>
   </div>
 </section>
