@@ -1,55 +1,150 @@
 {{ define "main" }}
 <section class="page-header">
   <div class="container">
-    <span class="section-label">Pricing</span>
-    <h1>Membership Plans</h1>
-    <p>Pick a plan that works for you. Simple pricing, no hidden charges.</p>
+    <span class="section-label">Membership & Fees</span>
+    <h1>Membership & Fees</h1>
+    <p>Choose the plan that fits your fitness goal.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="plans-grid">
-      <div class="plan-card reveal">
-        <div class="plan-name">Basic</div>
-        <div class="plan-price">₹999 <span>/month</span></div>
-        <div class="plan-duration">Monthly membership</div>
-        <ul class="plan-features">
-          <li>Full gym access</li>
-          <li>Basic workout guidance</li>
-          <li>General fitness support</li>
-          <li>Locker room access</li>
-          <li>Open gym hours</li>
+    <div class="fee-grid">
+      <!-- Weight Training -->
+      <div class="fee-card reveal">
+        <div class="fee-card-header">
+          <h3>Weight Training</h3>
+          <p class="fee-subtitle">Build strength with our weight training programs</p>
+        </div>
+        <ul class="fee-list">
+          <li class="fee-item">
+            <span class="fee-label">Per Day</span>
+            <span class="fee-price">₹200</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Week</span>
+            <span class="fee-price">₹800</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Month</span>
+            <span class="fee-price">1,200</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">3 Months</span>
+            <span class="fee-price">
+              ₹3,300
+              <span class="fee-savings">Save ₹300</span>
+            </span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">6 Months</span>
+            <span class="fee-price">
+              ₹6,000
+              <span class="fee-savings">Save ₹1,200</span>
+            </span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Year</span>
+            <span class="fee-price">
+              ₹10,000
+              <span class="fee-savings">Save ₹4,400</span>
+            </span>
+          </li>
         </ul>
-        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
       </div>
-      <div class="plan-card featured reveal">
-        <div class="plan-name">Premium</div>
-        <div class="plan-price">₹1,999 <span>/month</span></div>
-        <div class="plan-duration">Monthly membership</div>
-        <ul class="plan-features">
-          <li>Full gym access</li>
-          <li>Fat loss & strength guidance</li>
-          <li>Diet guidance support</li>
-          <li>Progress tracking</li>
-          <li>Priority equipment access</li>
-          <li>Monthly fitness assessment</li>
+
+      <!-- Cardio Training -->
+      <div class="fee-card featured reveal">
+        <div class="fee-card-header">
+          <h3>Cardio Training</h3>
+          <p class="fee-subtitle">Cardio & Fitness for Men & Women</p>
+        </div>
+        <ul class="fee-list">
+          <li class="fee-item">
+            <span class="fee-label">Per Day</span>
+            <span class="fee-price">₹300</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Week</span>
+            <span class="fee-price">₹1,200</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Month (Women)</span>
+            <span class="fee-price">₹1,700</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Month (Men)</span>
+            <span class="fee-price">₹1,800</span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">3 Months</span>
+            <span class="fee-price">
+              ₹4,600
+              <span class="fee-savings">Save ₹800</span>
+            </span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">6 Months</span>
+            <span class="fee-price">
+              ₹7,600
+              <span class="fee-savings">Save ₹3,200</span>
+            </span>
+          </li>
+          <li class="fee-item">
+            <span class="fee-label">1 Year</span>
+            <span class="fee-price">
+              ₹13,000
+              <span class="fee-savings">Save ₹8,600</span>
+            </span>
+          </li>
         </ul>
-        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
       </div>
-      <div class="plan-card reveal">
-        <div class="plan-name">Personal Coaching</div>
-        <div class="plan-price">₹4,999 <span>/month</span></div>
-        <div class="plan-duration">Monthly membership</div>
-        <ul class="plan-features">
-          <li>One-to-one personal coaching</li>
-          <li>Custom workout plan</li>
-          <li>Personal progress monitoring</li>
-          <li>Priority WhatsApp support</li>
-          <li>Nutrition & diet guidance</li>
-          <li>Weekly progress reviews</li>
-        </ul>
-        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire Now</a>
+
+      <!-- Admission Fee -->
+      <div class="fee-card admission-card reveal">
+        <div class="fee-card-header">
+          <h3>Admission Fee</h3>
+          <p class="fee-subtitle">One-time registration charge</p>
+        </div>
+        <div class="admission-price">
+          <span class="admission-amount">₹1,100</span>
+          <span class="admission-type">one-time payment</span>
+        </div>
+        <p class="admission-note">Pay only once when joining. No renewal charges.</p>
+        <a href="/contact/#contactForm" class="btn btn-whatsapp" style="width:100%;">Enquire on WhatsApp</a>
+      </div>
+    </div>
+
+    <p class="fee-disclaimer">
+      <strong>Note:</strong> Fees may be updated by gym management. For latest offers and admission details, <a href="/contact/#contactForm">contact us on WhatsApp</a>.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Timings</span>
+      <h2 class="section-title">Workout Hours</h2>
+    </div>
+    <div class="timing-grid">
+      <div class="timing-card reveal">
+        <h3>Women Batch</h3>
+        <p class="timing-detail">Morning: 5:00 AM – 6:30 AM</p>
+        <p class="timing-detail">Evening: 4:00 PM – 5:30 PM</p>
+      </div>
+      <div class="timing-card reveal">
+        <h3>Men Batch</h3>
+        <p class="timing-detail">Morning: 6:30 AM – 9:00 AM</p>
+        <p class="timing-detail">Evening: 5:30 PM – 9:00 PM</p>
+      </div>
+      <div class="timing-card reveal">
+        <h3>Sunday</h3>
+        <p class="timing-detail">1st week: Open (Morning)</p>
+        <p class="timing-detail">2nd week: Closed</p>
+        <p class="timing-note">Alternate Sundays</p>
       </div>
     </div>
   </div>
