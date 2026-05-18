@@ -29,9 +29,9 @@
     </div>
     <div class="footer-contact">
       <h4>Contact Info</h4>
-      <p>Thirukolakka street, near LMC ground, opest, Sirkali, Tamil Nadu 609110</p>
-      <p>+91 96985 86237</p>
-      <p>deencena54@gmail.com</p>
+      <p>{{ or .Site.Params.address "Thirukolakka street, near LMC ground, opest, Sirkali, Tamil Nadu 609110" }}</p>
+      <p>{{ or .Site.Params.phoneNumber "+91 96985 86237" }}</p>
+      <p>{{ or .Site.Params.email "deencena54@gmail.com" }}</p>
       <a href="/contact/#contactForm" class="btn btn-whatsapp footer-wa">Chat on WhatsApp</a>
     </div>
   </div>

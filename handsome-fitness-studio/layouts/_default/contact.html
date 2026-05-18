@@ -20,7 +20,7 @@
           </div>
           <div>
             <h4>Phone</h4>
-            <p>{{ .Site.Params.phoneNumber }}</p>
+            <p>{{ or .Site.Params.phoneNumber "+91 96985 86237" }}</p>
           </div>
         </div>
 
@@ -30,17 +30,7 @@
           </div>
           <div>
             <h4>Address</h4>
-            <p>{{ .Site.Params.address }}</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>{{ .Site.Params.openingHours }}</p>
+            <p>{{ or .Site.Params.address "Thirukolakka street, near LMC ground, opest, Sirkali, Tamil Nadu 609110" }}</p>
           </div>
         </div>
 
@@ -50,18 +40,18 @@
           </div>
           <div>
             <h4>Email</h4>
-            <p>{{ .Site.Params.email }}</p>
+            <p>{{ or .Site.Params.email "deencena54@gmail.com" }}</p>
           </div>
         </div>
 
         <div class="contact-social">
-          <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+          <a href="{{ or .Site.Params.instagram "https://www.instagram.com/hand.somefitnessstudio" }}" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
           </a>
-          <a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+          <a href="{{ or .Site.Params.facebook "https://www.facebook.com/profile.php?id=61550014264174" }}" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
-          <a href="https://wa.me/{{ .Site.Params.whatsappNumber }}?text={{ .Site.Params.whatsappMessage | urlquery }}" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <a href="https://wa.me/{{ or .Site.Params.whatsappNumber "919698586237" }}?text={{ or .Site.Params.whatsappMessage "Hi Handsome Fitness Studio, I'd like to enquire about your membership plans." | urlquery }}" target="_blank" rel="noopener" aria-label="WhatsApp">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H6l3-3a8.5 8.5 0 1 1 12-5.5z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>
           </a>
         </div>
@@ -69,7 +59,7 @@
 
       <div class="contact-form reveal">
         <h3 style="margin-bottom: 20px;">Send an Enquiry</h3>
-        <form id="contactForm" data-whatsapp="{{ .Site.Params.whatsappNumber }}" data-phone="{{ .Site.Params.phoneNumber }}">
+        <form id="contactForm" data-whatsapp="{{ or .Site.Params.whatsappNumber "919698586237" }}" data-phone="{{ or .Site.Params.phoneNumber "+91 96985 86237" }}">
           <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -95,7 +85,7 @@
           </div>
           <div class="contact-form-actions">
             <button type="button" class="btn btn-whatsapp" onclick="sendEnquiry()">Send Enquiry on WhatsApp</button>
-            <a href="tel:{{ .Site.Params.phoneNumber }}" class="btn btn-call">Call Now</a>
+            <a href="tel:{{ or .Site.Params.phoneNumber "+91 96985 86237" }}" class="btn btn-call">Call Now</a>
           </div>
         </form>
       </div>
