@@ -6,5 +6,10 @@
   "cleanUrls": true,
   "env": {
     "HUGO_VERSION": "0.161.1"
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
   }
 }
